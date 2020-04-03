@@ -12,7 +12,7 @@
 #|grep java
 killTomcat()
 {
-    pid=`ps -ef|grep linux-7002 |awk '{print $2}'`
+    pid=`ps -ef|grep dev-7002 |awk '{print $2}'`
     echo "linux-7002 Id list :$pid"
     if [ "$pid" = "" ]
     then
