@@ -9,10 +9,11 @@
 #export TOMCAT_APP_PATH=/home/software/apache-tomcat/tomcat8-linux-9006/apache-tomcat-8.5.42
 
 ### base 函数
+#|grep java
 killTomcat()
 {
-    pid=`ps -ef|grep tomcat8-linux|grep java|awk '{print $2}'`
-    echo "tomcat8-linux Id list :$pid"
+    pid=`ps -ef|grep linux-7002 |awk '{print $2}'`
+    echo "linux-7002 Id list :$pid"
     if [ "$pid" = "" ]
     then
       echo "no tomcat pid alive"
